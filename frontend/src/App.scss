@@ -12,6 +12,10 @@ img {
   width: 400px;
 }
 
+.productImage {
+  width: 800px;
+}
+
 a {
   text-decoration: none;
   color: #666;
@@ -34,4 +38,14 @@ a:hover {
 
 .productCard {
   min-height: 380px;
+}
+
+.productTitle {
+  color: #555;
+  font-weight: 450;
+}
+
+.btn-primary:disabled {
+  background-color: #adc5c5;
+  border-color: #adc5c5;
 }
