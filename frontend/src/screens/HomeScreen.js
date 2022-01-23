@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -6,6 +7,11 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 
 const HomeScreen = () => {
+  let navigate = useNavigate();
+
+  async function goToShop() {
+    navigate("shop");
+  }
   return (
     <>
       <Container fluid>
@@ -22,7 +28,12 @@ const HomeScreen = () => {
         </Row>
         <Row>
           <Col className="text-center py-3">
-            <Button variant="outline-primary" size="lg" className="buyNowBtn">
+            <Button
+              onClick={goToShop}
+              variant="outline-primary"
+              size="lg"
+              className="goShop"
+            >
               Go to Shop <i class="fas fa-long-arrow-alt-right"></i>
             </Button>{" "}
           </Col>
