@@ -34,7 +34,7 @@ const HomeScreen = () => {
               size="lg"
               className="goShop"
             >
-              Go to Shop <i class="fas fa-long-arrow-alt-right"></i>
+              Go to Shop <i className="fas fa-long-arrow-alt-right"></i>
             </Button>{" "}
           </Col>
         </Row>

@@ -1,0 +1,22 @@
+{
+  "name": "sneakerssznco",
+  "version": "1.0.0",
+  "description": "ecommerce site for sneakers",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaspier/sneakerssznco.git"
+  },
+  "author": "Jaspier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jaspier/sneakerssznco/issues"
+  },
+  "homepage": "https://github.com/Jaspier/sneakerssznco#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
