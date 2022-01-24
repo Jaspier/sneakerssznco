@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: "1",
     name: "Panda Dunks (Low)",
     image: "/images/panda-dunks-low.png",
     description: "Black and White Panda Dunks (Low) Size 9",
@@ -9,7 +8,6 @@ const products = [
     countInStock: 10,
   },
   {
-    _id: "2",
     name: "Red Jordan 1 (Mid)",
     image: "/images/red-jordan-1.jpg",
     description: "Red Jordan 1 (Mid) Size 8",
@@ -18,7 +16,6 @@ const products = [
     countInStock: 7,
   },
   {
-    _id: "3",
     name: "Washed blue Jordan 1 (High)",
     image: "/images/washed-blue-jordan-1.png",
     description: "Washed Blue Jordan 1 (High) size 9",
@@ -27,7 +24,6 @@ const products = [
     countInStock: 5,
   },
   {
-    _id: "4",
     name: "Rookie Of The Year Jordan 1 (Mid)",
     image: "/images/roty-jordan-1.jpg",
     description: "Rookie of The Year Jordan 1 (Mid) size 8.5",
@@ -36,7 +32,6 @@ const products = [
     countInStock: 11,
   },
   {
-    _id: "5",
     name: "Pink Jordan 1 (Mid)",
     image: "/images/pink-jordan-1.png",
     description: "Pink Jordan 1 (Mid) size 9",
@@ -45,7 +40,6 @@ const products = [
     countInStock: 7,
   },
   {
-    _id: "6",
     name: "Ben & Jerry's Dunks (Mid)",
     image: "/images/bj-dunks.jpg",
     description: "Ben & Jerry's Dunks (Low) size 8",
