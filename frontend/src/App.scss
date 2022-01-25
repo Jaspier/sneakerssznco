@@ -54,3 +54,8 @@ a {
   background-color: #adc5c5;
   border-color: #adc5c5;
 }
+
+.alert.alert-danger {
+  background: rgba(255, 0, 0, 0.2);
+  color: darkred;
+}
