@@ -9,6 +9,7 @@ import FaqScreen from "./screens/FaqScreen";
 import AboutScreen from "./screens/AboutScreen";
 import ContactScreen from "./screens/ContactScreen";
 import ProductScreen from "./screens/ProductScreen";
+import LoginScreen from "./screens/LoginScreen";
 
 const App = () => {
   return (
@@ -19,11 +20,12 @@ const App = () => {
           <Container>
             <Routes>
               <Route index element={<HomeScreen />} />
-              <Route path="/shop" element={<ShopScreen />} />
+              <Route path="/login" element={<LoginScreen />} />
               <Route path="/faq" element={<FaqScreen />} />
               <Route path="/about" element={<AboutScreen />} />
               <Route path="/contact" element={<ContactScreen />} />
               <Route path="/product/:id" element={<ProductScreen />} />
+              <Route path="/shop" element={<ShopScreen />} />
             </Routes>
           </Container>
         </main>
