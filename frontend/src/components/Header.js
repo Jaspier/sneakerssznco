@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { LinkContainer } from "react-router-bootstrap";
-import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import { logout } from "../actions/userActions";
 
 const Header = () => {
@@ -27,16 +27,15 @@ const Header = () => {
               <LinkContainer to="/shop">
                 <Nav.Link>Shop</Nav.Link>
               </LinkContainer>
-
+              {userInfo && userInfo.isAdmin && (
+                <LinkContainer to="/admin/productlist">
+                  <Nav.Link>Product List</Nav.Link>
+                </LinkContainer>
+              )}
               {userInfo ? (
-                <NavDropdown title={userInfo.name} id="username">
-                  <LinkContainer to="/profile">
-                    <NavDropdown.Item>Profile</NavDropdown.Item>
-                  </LinkContainer>
-                  <NavDropdown.Item onClick={logoutHandler}>
-                    Logout
-                  </NavDropdown.Item>
-                </NavDropdown>
+                <LinkContainer to="#!" id="username">
+                  <Nav.Link>{userInfo.name}</Nav.Link>
+                </LinkContainer>
               ) : (
                 <>
                   <LinkContainer to="/faq">
@@ -50,12 +49,10 @@ const Header = () => {
                   </LinkContainer>
                 </>
               )}
-              {userInfo && userInfo.isAdmin && (
-                <NavDropdown title="Admin" id="adminmenu">
-                  <LinkContainer to="/admin/productlist">
-                    <NavDropdown.Item>Products</NavDropdown.Item>
-                  </LinkContainer>
-                </NavDropdown>
+              {userInfo && (
+                <LinkContainer to="/shop">
+                  <Nav.Link onClick={logoutHandler}>Logout</Nav.Link>
+                </LinkContainer>
               )}
             </Nav>
           </Navbar.Collapse>
