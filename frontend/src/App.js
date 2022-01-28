@@ -11,6 +11,7 @@ import ContactScreen from "./screens/ContactScreen";
 import ProductScreen from "./screens/ProductScreen";
 import LoginScreen from "./screens/LoginScreen";
 import ProductListScreen from "./screens/ProductListScreen";
+import ProductEditScreen from "./screens/ProductEditScreen";
 
 const App = () => {
   return (
@@ -30,6 +31,10 @@ const App = () => {
               <Route
                 path="/admin/productlist"
                 element={<ProductListScreen />}
+              />
+              <Route
+                path="/admin/product/:id/edit"
+                element={<ProductEditScreen />}
               />
             </Routes>
           </Container>
