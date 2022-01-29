@@ -104,7 +104,7 @@ const ProductListScreen = () => {
               <tr key={product._id}>
                 <td>{product._id}</td>
                 <td>{product.name}</td>
-                <td>${product.price}</td>
+                <td>£{product.price}</td>
                 <td>{product.brand}</td>
                 <td>
                   <LinkContainer to={`/admin/product/${product._id}/edit`}>

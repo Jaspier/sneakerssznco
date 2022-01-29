@@ -19,7 +19,7 @@ const Product = ({ product }) => {
           </Card.Title>
         </Link>
         <Card.Text as="h3" className="price">
-          ${product.price}
+          £{product.price}
         </Card.Text>
       </Card.Body>
     </Card>
