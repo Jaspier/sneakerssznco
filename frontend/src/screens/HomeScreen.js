@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
+import Meta from "../components/Meta";
 
 const HomeScreen = () => {
   let navigate = useNavigate();
@@ -14,6 +15,7 @@ const HomeScreen = () => {
   }
   return (
     <>
+      <Meta />
       <Container fluid>
         <Row>
           <Col>

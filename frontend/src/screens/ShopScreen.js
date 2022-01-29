@@ -4,6 +4,7 @@ import { Row, Col } from "react-bootstrap";
 import Product from "../components/Product";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
+import Meta from "../components/Meta";
 import { listProducts } from "../actions/productActions";
 
 const ShopScreen = () => {
@@ -18,6 +19,7 @@ const ShopScreen = () => {
 
   return (
     <>
+      <Meta title="sneakerssznco | Get your sneakers here!" />
       <h1>Latest in Stock</h1>
       {loading ? (
         <Loader />
