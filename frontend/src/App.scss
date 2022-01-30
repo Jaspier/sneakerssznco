@@ -12,14 +12,6 @@ img {
   width: 400px;
 }
 
-.productImage {
-  width: 800px;
-}
-
-.productCardImg {
-  width: 270px;
-}
-
 a {
   text-decoration: none;
   color: #666;
@@ -33,21 +25,6 @@ a {
 .card-title {
   font-size: 1.1rem;
   font-weight: 300;
-}
-
-.price {
-  color: #444;
-  position: absolute;
-  bottom: 30px;
-}
-
-.productCard {
-  min-height: 430px;
-}
-
-.productTitle {
-  color: #555;
-  font-weight: 450;
 }
 
 .btn-primary:disabled {
