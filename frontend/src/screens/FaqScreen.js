@@ -4,7 +4,7 @@ const FaqScreen = () => {
   return (
     <>
       <h1>FAQ</h1>
-      <h2 className="text-center">Coming Soon...</h2>;
+      <h2 className="text-center">Coming Soon...</h2>
     </>
   );
 };
