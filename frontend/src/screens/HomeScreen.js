@@ -23,7 +23,7 @@ const HomeScreen = () => {
               <Image
                 src={require("../assets/main.png")}
                 alt="main-poster"
-                className="text-center"
+                className="main-poster"
               />
             </Col>
           </Row>
