@@ -17,17 +17,30 @@ const HomeScreen = () => {
     <>
       <Meta />
       <Container fluid>
-        <Row>
-          <Col>
-            <Image src={require("../assets/alt-1.jpg")} alt="alt1-poster" />
-          </Col>
-          <Col>
-            <Image src={require("../assets/main.png")} alt="main-poster" />
-          </Col>
-          <Col>
-            <Image src={require("../assets/alt-2.png")} alt="alt2-poster" />
-          </Col>
-        </Row>
+        {window.screen.width <= 400 ? (
+          <Row>
+            <Col>
+              <Image
+                src={require("../assets/main.png")}
+                alt="main-poster"
+                className="text-center"
+              />
+            </Col>
+          </Row>
+        ) : (
+          <Row>
+            <Col>
+              <Image src={require("../assets/alt-1.jpg")} alt="alt1-poster" />
+            </Col>
+            <Col>
+              <Image src={require("../assets/main.png")} alt="main-poster" />
+            </Col>
+            <Col>
+              <Image src={require("../assets/alt-2.png")} alt="alt2-poster" />
+            </Col>
+          </Row>
+        )}
+
         <Row>
           <Col className="text-center py-3">
             <Button

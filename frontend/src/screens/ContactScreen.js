@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <>
       <h1>Contact</h1>
-      <h1 className="contact-link">
+      <h1 className="contact-link text-center">
         <a
           href="https://www.instagram.com/sneakerssznco/"
           target="_blank"

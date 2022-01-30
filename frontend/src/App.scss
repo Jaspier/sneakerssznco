@@ -12,6 +12,18 @@ img {
   width: 400px;
 }
 
+@media only screen and (max-width: 400px) {
+  img {
+    width: 340px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  footer {
+    display: none;
+  }
+}
+
 .productImage {
   width: 800px;
 }
@@ -73,6 +85,6 @@ a {
 }
 
 .contact-link {
-  font-size: 5rem;
+  font-size: 3.5rem;
   margin-top: 5rem;
 }
