@@ -4,6 +4,10 @@ main {
   height: 85vh;
 }
 
+.homeScreenContainer {
+  text-align-last: center;
+}
+
 .goShop {
   margin-top: 30px;
 }
@@ -54,20 +58,35 @@ a {
   margin-top: 5rem;
 }
 
-@media only screen and (max-width: 400px) {
-  img {
-    width: 340px;
+// vertical iphone 12
+@media only screen and (max-width: 450px) {
+  .main-poster {
+    width: 328px;
+    text-align-last: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
 
-@media only screen and (max-width: 400px) {
+// landscape iphone 12
+@media only screen and (max-width: 1000px) and (min-width: 800px) {
+  .poster {
+    width: 208px;
+    text-align-last: center;
+  }
   footer {
     display: none;
   }
 }
 
-@media only screen and (max-width: 400px) {
-  .main-poster {
-    width: 328px;
+// ipad pro
+@media only screen and (max-width: 1366px) and (min-width: 1000px) {
+  .poster {
+    width: 348px;
+    text-align-last: center;
+  }
+  .homeScreenContainer {
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 }

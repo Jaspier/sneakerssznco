@@ -16,8 +16,8 @@ const HomeScreen = () => {
   return (
     <>
       <Meta />
-      <Container fluid>
-        {window.screen.width <= 400 ? (
+      <Container fluid className="homeScreenContainer">
+        {window.screen.width <= 450 ? (
           <Row>
             <Col>
               <Image
@@ -30,13 +30,25 @@ const HomeScreen = () => {
         ) : (
           <Row>
             <Col>
-              <Image src={require("../assets/alt-1.jpg")} alt="alt1-poster" />
+              <Image
+                src={require("../assets/alt-1.jpg")}
+                alt="alt1-poster"
+                className="poster"
+              />
             </Col>
             <Col>
-              <Image src={require("../assets/main.png")} alt="main-poster" />
+              <Image
+                src={require("../assets/main.png")}
+                alt="main-poster"
+                className="poster"
+              />
             </Col>
             <Col>
-              <Image src={require("../assets/alt-2.png")} alt="alt2-poster" />
+              <Image
+                src={require("../assets/alt-2.png")}
+                alt="alt2-poster"
+                className="poster"
+              />
             </Col>
           </Row>
         )}
