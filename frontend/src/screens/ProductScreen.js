@@ -72,6 +72,12 @@ const ProductScreen = () => {
                     <Button
                       className="btn-block"
                       type="button"
+                      onClick={() =>
+                        window.open(
+                          "https://www.instagram.com/sneakerssznco/",
+                          "_blank"
+                        )
+                      }
                       disabled={product.countInStock === 0}
                     >
                       Enquire for purchase
