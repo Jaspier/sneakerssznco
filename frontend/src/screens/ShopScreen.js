@@ -20,7 +20,7 @@ const ShopScreen = () => {
   return (
     <>
       <Meta title="sneakerssznco | Get your sneakers here!" />
-      <h1>What we have in Stock</h1>
+      <h1>Latest in Stock</h1>
       {loading ? (
         <Loader />
       ) : error ? (
