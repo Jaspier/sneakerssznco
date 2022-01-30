@@ -11,7 +11,7 @@ const HomeScreen = () => {
   let navigate = useNavigate();
 
   async function goToShop() {
-    navigate("shop");
+    navigate("/shop");
   }
   return (
     <>
