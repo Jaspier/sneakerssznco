@@ -69,10 +69,12 @@ a {
   .home-col-2 {
     display: none;
   }
-
   .main-poster-card {
     align-items: center;
     border: none;
+  }
+  footer {
+    transform: translateY(50px);
   }
 }
 
