@@ -62,34 +62,23 @@ a {
 @media only screen and (max-width: 450px) {
   .main-poster {
     width: 328px;
-    text-align-last: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
   }
-  footer {
+  .poster-1,
+  .poster-2,
+  .home-col-1,
+  .home-col-2 {
     display: none;
+  }
+
+  .main-poster-card {
+    align-items: center;
+    border: none;
   }
 }
 
 // landscape iphone 12
 @media only screen and (max-width: 1000px) and (min-width: 800px) {
-  .poster {
-    width: 208px;
-    text-align-last: center;
-  }
   footer {
-    display: none;
-  }
-}
-
-// ipad pro
-@media only screen and (max-width: 1366px) and (min-width: 1000px) {
-  .poster {
-    width: 348px;
-    text-align-last: center;
-  }
-  .homeScreenContainer {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    transform: translateY(50px);
   }
 }

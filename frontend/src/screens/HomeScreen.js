@@ -1,10 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
+import { Card, Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
 import Meta from "../components/Meta";
 
 const HomeScreen = () => {
@@ -17,41 +16,35 @@ const HomeScreen = () => {
     <>
       <Meta />
       <Container fluid className="homeScreenContainer">
-        {window.screen.width <= 450 ? (
-          <Row>
-            <Col>
-              <Image
-                src={require("../assets/main.png")}
-                alt="main-poster"
-                className="main-poster"
-              />
-            </Col>
-          </Row>
-        ) : (
-          <Row>
-            <Col>
-              <Image
+        <Row>
+          <Col className="home-col-1">
+            <Card className="poster-1-card">
+              <Card.Img
                 src={require("../assets/alt-1.jpg")}
-                alt="alt1-poster"
-                className="poster"
+                variant="top"
+                className="poster poster-1"
               />
-            </Col>
-            <Col>
-              <Image
+            </Card>
+          </Col>
+          <Col className="home-col-main">
+            <Card className="main-poster-card">
+              <Card.Img
                 src={require("../assets/main.png")}
-                alt="main-poster"
-                className="poster"
+                variant="top"
+                className="poster main-poster"
               />
-            </Col>
-            <Col>
-              <Image
+            </Card>
+          </Col>
+          <Col className="home-col-2">
+            <Card className="poster-2-card">
+              <Card.Img
                 src={require("../assets/alt-2.png")}
-                alt="alt2-poster"
-                className="poster"
+                variant="top"
+                className="poster poster-2"
               />
-            </Col>
-          </Row>
-        )}
+            </Card>
+          </Col>
+        </Row>
 
         <Row>
           <Col className="text-center py-3">
