@@ -74,13 +74,13 @@ a {
     border: none;
   }
   footer {
-    transform: translateY(50px);
+    display: none;
   }
 }
 
 // landscape iphone 12
 @media only screen and (max-width: 1000px) and (min-width: 800px) {
   footer {
-    transform: translateY(50px);
+    display: none;
   }
 }
