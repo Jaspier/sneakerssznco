@@ -10,6 +10,11 @@ main {
 
 .goShop {
   margin-top: 30px;
+  z-index: 1000;
+}
+
+footer {
+  z-index: -1000;
 }
 
 img {
