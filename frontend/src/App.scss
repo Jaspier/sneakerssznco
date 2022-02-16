@@ -27,6 +27,11 @@ a {
   color: #666;
 }
 
+.link {
+  text-decoration: underline;
+  color: teal;
+}
+
 .productNameLink:hover {
   color: inherit;
   text-decoration: underline;
@@ -90,4 +95,27 @@ a {
   footer {
     display: none;
   }
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.section {
+  margin-top: 100px;
+}
+
+footer {
+  display: none;
+}
+
+.accordion-item {
+  border-left: none;
+  border-right: none;
+  border-width: 1px;
+  border-color: teal;
+}
+
+.accordion-button {
+  text-transform: uppercase;
 }
