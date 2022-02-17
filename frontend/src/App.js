@@ -6,7 +6,6 @@ import Footer from "./components/Footer";
 import HomeScreen from "./screens/HomeScreen";
 import ShopScreen from "./screens/ShopScreen";
 import FaqScreen from "./screens/FaqScreen";
-import AboutScreen from "./screens/AboutScreen";
 import ContactScreen from "./screens/ContactScreen";
 import ProductScreen from "./screens/ProductScreen";
 import LoginScreen from "./screens/LoginScreen";
@@ -24,7 +23,6 @@ const App = () => {
               <Route index element={<HomeScreen />} />
               <Route path="/login" element={<LoginScreen />} />
               <Route path="/faq" element={<FaqScreen />} />
-              <Route path="/about" element={<AboutScreen />} />
               <Route path="/contact" element={<ContactScreen />} />
               <Route path="/product/:id" element={<ProductScreen />} />
               <Route path="/shop" element={<ShopScreen />} />

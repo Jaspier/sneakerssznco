@@ -1,9 +1,5 @@
 @import "custom";
 
-main {
-  height: 85vh;
-}
-
 .homeScreenContainer {
   text-align-last: center;
 }
@@ -14,8 +10,7 @@ main {
 }
 
 footer {
-  z-index: -1000;
-  position: relative;
+  display: none;
 }
 
 img {
@@ -85,16 +80,10 @@ a {
     align-items: center;
     border: none;
   }
-  footer {
-    display: none;
-  }
 }
 
 // landscape iphone 12
 @media only screen and (max-width: 1000px) and (min-width: 800px) {
-  footer {
-    display: none;
-  }
 }
 
 .title {
@@ -103,10 +92,6 @@ a {
 
 .section {
   margin-top: 100px;
-}
-
-footer {
-  display: none;
 }
 
 .accordion-item {

@@ -4,7 +4,6 @@ import { Container, Row, Col, Accordion } from "react-bootstrap";
 const FaqScreen = () => {
   return (
     <>
-      <h1>FAQ</h1>
       <Container>
         <Row className="mt-5">
           <Col sm={4} className="title">

@@ -13,6 +13,11 @@ const Contact = () => {
           <i class="fab fa-instagram"></i> Instagram
         </a>
       </h1>
+      <h1 className="contact-link text-center">
+        <a href="mailto:sneakerssznco@gmail.com">
+          <i class="fa-solid fa-envelope"></i> Email
+        </a>
+      </h1>
     </>
   );
 };
